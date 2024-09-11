@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Data";
+    TempData.Keep();
+}
+
+<h2>Data</h2>
+
+Subject is <b> @ViewData["subject"]</b>
+
+Version is <b> @ViewBag.version</b>
+
+language is @TempData["language"] <br/>
+@TempData["age"] <br/>
+@TempData["computer"] <br/>
+
+<a href ="/home/about">About</a>

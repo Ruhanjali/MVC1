@@ -1,0 +1,41 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    string[] colors = { "red", "green", "yellow" };
+
+}
+
+<h2>This is home page</h2>
+
+Today is @DateTime.Now.ToShortDateString()
+
+@if (DateTime.IsLeapYear(2018))
+{
+
+    <b>Leap Year</b>
+
+}
+else
+{
+    <b> Not Leap Year</b>
+}
+
+<ul>
+    <li>White</li>
+    <li>White</li>
+    <li>White</li>
+</ul>
+
+
+<ul>
+    @foreach (string c in colors)
+    {
+
+        <li>@c</li>
+    }
+</ul>
+
